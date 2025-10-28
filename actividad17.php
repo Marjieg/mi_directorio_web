@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
     <?php 
     # Escribe un script que, dada una cadena de caracteres, 
     #genere un mensaje que indique si es, o no, un palíndromo. 
@@ -16,9 +9,9 @@
    $cadena = ("salas");
  
    if (strrev($cadena) == $cadena){
-    echo "es palíndromo";
+    echo "La palabra $cadena es palíndromo<br>";
    }else{ 
-        echo "no es palíndromo";
+        echo "no es palíndromo<br>";
    }
     #Escribe un script que, dadas dos cadenas de caracteres, genere un mensaje que indique
     # el número de veces que la primera está incluida en la segunda.
@@ -28,8 +21,6 @@ $cadena1=("la caracola está en la playa");
 $cadena2=("caracola");
     #numero de veces que cadena cadena1 está en cadena2 -->
     #primero tendria que usar una función que buscase "la" dentro de cadena1
- 
-
 
 # tengo que hacer un bucle que recorra la cadena y me vaya
 # devolviendo la cadena que quiero contar hasta el final
@@ -46,10 +37,7 @@ while (($posicion = strpos($cadena1, $cadena2, $posicion)) !== false) {
     $posicion = $posicion + strlen($cadena2); # Avanza para evitar repeticiones
 }
 
-echo "La subcadena '$cadena2' aparece $contador veces en la cadena";
+echo "La subcadena '$cadena2' aparece $contador veces en la frase '$cadena1'";
 
 
     ?>
-    
-</body>
-</html>
