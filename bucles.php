@@ -46,7 +46,7 @@
     
     }while(($dado !=6)&& ($contador < $TopeDeTiradas));
 
-
+    }
 
 
 

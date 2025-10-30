@@ -22,7 +22,6 @@
     //devolvemos true siempre
         return true;
     }
-    
     // Partiendo del array
     //$listaFrutasPrecio =['Peras'=> 2,15, 'Limones'=>2,80, 'Cerezas'=>3,35,
     //'Naranjas'=>5,31, 'Uvas'=>3,42, 'Manzanas'=> 4,43, 'Mango'=>3,90];
@@ -30,13 +29,13 @@
     //tenemos 20eur hacer un programa c9_pedidoFrutas.php que genere un pedido de frutas al azar
     //limitaciones y que salga asi ()
  $listaFrutasPrecio =[
-        'Peras'=> 2,15,
-        'Limones'=>2,80, 
-        'Cerezas'=>3,35,
-        'Naranjas'=>5,31, 
-        'Uvas'=>3,42, 
-        'Manzanas'=> 4,43, 
-        'Mango'=>3,90];
+        'Peras'=> 2.15,
+        'Limones'=>2.80, 
+        'Cerezas'=>3.35,
+        'Naranjas'=>5.31, 
+        'Uvas'=>3.42, 
+        'Manzanas'=> 4.43, 
+        'Mango'=>3.90];
 $kgmax = 10;  //establezco el peso máximo
 $presupuesto =20; //establezco el presupuesto también
 shuffle_asociativo($listaFrutasPrecio); //usando la función dada en el ejercicio que está arriba
@@ -44,8 +43,8 @@ shuffle_asociativo($listaFrutasPrecio); //usando la función dada en el ejercici
 $totalKg = 0;   //inicializo los contadores
 $totalPrecio = 0;
 $pedido = []; //array para guardar las frutas que compro
-
-foreach ($listaFrutasPrecio as $fruta => $precioKg) {
+echo "<h3>Hola, cargo máximo 10kg y tengo 20 eur</h3><br>";
+foreach ($listaFrutasPrecio as $fruta => $precioKg) { //recorro las filas
     $kilos = rand(1, 3); // kilos al azar
     $coste = $kilos * $precioKg; //calculo el coste
     // Comprobamos que no superamos los límites antes de añadir
@@ -55,20 +54,18 @@ foreach ($listaFrutasPrecio as $fruta => $precioKg) {
             'precioKg' => $precioKg,
             'subtotal' => $coste
         ];
-        $totalKg += $kilos;
-        $totalPrecio += $coste;
+        $totalKg += $kilos; //esto me suma todos los kg
+        $totalPrecio += $coste; //esto me da el total del coste
     } else {
         break; // si se pasa de límites, paramos
     }
-}
 // Mostramos el resultado
-echo "<h3> Pedido de frutas aleatorio</h3>";
-foreach ($pedido as $fruta => $info) {
-    echo "$fruta: {$info['kilos']} kg a {$info['precioKg']} €/kg → {$info['subtotal']} €<br>";
+    echo "$fruta $kilos kg $precioKg euros $coste<br>"; //imprimo la fruta,kg y el coste
+    //este echo lo imprimo aquí porque quiero la parte local de cada fruta, el interior del buble
 }
-echo "<hr><b>Total:</b> $totalKg kg — " . round($totalPrecio, 2) . " €<br>";
-    
-    
+//quiero mostrar el pedido aleatorio de fruta, la fruta, el precio y los kg
+echo "<h4>el total kg es $totalKg kg y vale $totalPrecio euros</h4><br>";
+    //este lo imprimo aquí porque quiero el global total de kg y de precio
     ?>
 </body>
 </html>

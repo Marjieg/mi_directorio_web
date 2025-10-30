@@ -15,20 +15,21 @@ el resto de los datos se calculan (se usa también la función date)
 y cuando se ejecute salga esto: */
 
 
-define("EURO_DOLAR", 1.05);
+define("EURO_DOLAR", 1.05); //defino la costante, nombre y valor asociado
 $nombre = "Fulanito Pérez Pérez";
 $entrega = 520.5;
 
-$euros = $entrega / EURO_DOLAR;
+$euros = $entrega * EURO_DOLAR; //aquí calulo la conversión de euros a dolares
 
 $fecha = date("d/m/Y"); 
 
-echo "Fecha: $fecha<br>";
-echo "Nombre: $nombre<br>";
-echo "Cantidad entregada en dólares: $entrga<br>";
-echo "Equivalente en euros: .number_format($euros, 2)";
-
-
+echo "<table><tr><th>SU RECIBO DE CAMBIO DE EUROS A DOLARES</th></tr><br>";
+echo "<tr><td>SR/A: $nombre</td></tr>";
+echo "<td>entrega: $entrega</td>"; //esto son euros no dolares!
+echo "<tr><td>recibe:".number_format($euros, 2)."</td></tr><br>";
+echo "<td>Fecha: $fecha</td></table>";
+//terminar de dar el formato a la tabla
+// var_dump($precio) --> esto me imprime lo que necesite saber
 ?>
     
 </body>
