@@ -60,7 +60,7 @@ Podéis hacerlo como queráis, pero debe quedar algo como */
 echo "<h2>RESULTADOS DE LA JORNADA</h2>";
 echo "<table border='1' cellpadding='5'; text-aling:center;'>";
 echo "<tr><th>Local</th><th>Resultado</th><th>Visitante</th></tr>";
-for ($i=0;$i<10;$i++){
+for ($i=0;$i<10;$i++){ 
     echo "<td>$locales[$i]</td>";
     echo "<td>$golesLocales[$i]";
     echo " - $golesVisitantes[$i]</td>";
@@ -70,15 +70,18 @@ for ($i=0;$i<10;$i++){
 echo "</table>";
 
 //Apartado D (EXTRA) mostrar el resultado de esta forma bonica!! (escudos incluidos!)
+//para esto he creado una carpeta "ligaEquipos" y dentro he cuardado este código y una carpeta con las imagenes 
+//de los escudos
 echo "<h2>RESULTADOS DE LA JORNADA</h2>";
 echo "<table border='1' cellpadding='5'; text-aling:center;'>";
 echo "<tr><th>Local</th><th>Resultado</th><th>Visitante</th></tr>";
 for ($i=0;$i<10;$i++){
     //convertimos el nombre del equipo a formato del archivo
-    $escudoLocal ="escudosEquipos/" . str_replace(" ","_",$locales[$i]) . ".jpg";
-    $escudoVisitante ="escudosEquipos/" . str_replace(" ","_",$visitantes[$i] . ".jpg");
+    //creo las variables escudoLocal y escudoVisitante y les digo la ruta donde están las imagenes
+    $escudoLocal ="escudosEquipos/" .$locales[$i] . ".jpg";
+    $escudoVisitante ="escudosEquipos/" .$visitantes[$i] . ".jpg";
   echo "<tr>";
-    echo "<td><img src='$escudoLocal' width='40' height='40'> {$locales[$i]}</td>";
+    echo "<td><img src='$escudoLocal' width='40' height='40'> {$locales[$i]}</td>"; //aquí carga las imagenes de los escudos locales
     echo "<td><strong>{$golesLocales[$i]} - {$golesVisitantes[$i]}</strong></td>";
     echo "<td>{$visitantes[$i]} <img src='$escudoVisitante' width='40' height='40'></td>";
     echo "</tr>";
