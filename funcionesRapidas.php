@@ -36,4 +36,25 @@ echo "'HOLA' y 'JUAN' dan". ordenaDos('HOLA','JUAN')."<br>";
 echo "'HOLA' y 8 dan '". ordenaDos("HOLA",8)."<br>";
 echo 'TRUE Y FALSE dan '.ordenaDos(TRUE,FALSE)."<br>";
 
+/*3. Función cuentaLetra( $cadena, $letra) : entero
+Sin usar funciones externas (excepto la función strlen()), recibe un string con una cadena y un string con una
+letra, devuelve el número de veces que la letra aparece en la cadena. (pista, cadena se puede tratar como si
+fuera un array)*/
+
+
+function cuentaLetra($cadena,$letra){
+    $contador=0;
+    $posicion=0;
+    while (($posicion = strpos($cadena, $letra, $posicion)) !== false) {
+        $contador++;
+        $posicion = $posicion + strlen($letra); # Avanza para evitar repeticiones
+    }
+    return $contador;
+}
+
+echo "la 'x' se repite en 'extramadurax' ".cuentaLetra("extramadurax","x").$contador."<br>";
+
+
+
+
 ?>
