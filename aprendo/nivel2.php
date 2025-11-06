@@ -26,6 +26,16 @@ while($i>=1){
     echo "cuentra atrás $i<br>";
     $i--;
 }
+//Escribe un script PHP que muestre los números del 1 al 10 en una tabla de una fila
+//  y 10 columnas. Utiliza un bucle while
+
+$i=1;
+echo"<table border='1'><tr>";
+while($i <=10){
+    echo "<td>$i</td>";
+    $i++;
+}
+echo "</td></table>";
 
     ?>
 </body>
