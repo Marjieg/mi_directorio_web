@@ -21,4 +21,17 @@ $precioMpostre = mediaPrecio($postres);
 $precioMenu = $precioMprimero + $precioMsegundo + $precioMpostre;
 echo "precio MENÚ".$precioMenu;
 
+
+
+/*Crear una página web que imprima un menú del día, menuDia.php, poniendo al menos 2 platos de
+cada array ($primeros, $segundos y $postres) al azar y calculando el precio del menú con la media
+de los precios de cada parte*/
+shuffle($primeros);
+shuffle($segundos);
+shuffle($postres);
+
+$primerosMenu = array_slice($primeros, 0, rand(2, count($primeros)));
+$segundosMenu = array_slice($segundos, 0, rand(2, count($segundos)));
+$postresMenu  = array_slice($postres, 0, rand(2, count($postres)));
+
 ?>

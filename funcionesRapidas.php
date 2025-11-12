@@ -54,7 +54,9 @@ function cuentaLetra($cadena,$letra){
 
 echo "la 'x' se repite en 'extramadurax' ".cuentaLetra("extramadurax","x").$contador."<br>";
 
-
+/*4. Función sumaPares($array): numerico;
+Sin usar funciones externas hacer la función sumaPares ($array), devuelve la suma de las posiciones pares del
+array $array (0 es par!)*/
 
 
 ?>
