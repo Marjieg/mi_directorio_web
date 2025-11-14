@@ -1,0 +1,22 @@
+ Actividad
+Visita la web https://www.caminitodelrey.info/es/aviso-cookies/politica y
+haz un esquema acerca de la tipología, finalidad y funcionamiento de las cookies.
+
+¿qué hacen?
+Almacenan información --> para funcionamiento pag web
+                      --> preferencias usuario
+                      --> inf estadística
+                      --> optimizar navegación
+Tipos --> cookies propias (origen dominio gestionado por el propiro editor)
+      --> cookies terceros (origen dominio NO gestionado por el editor)
+Según su función --> Técnicas (estrictamente necesarias)- imprescindibles para el funcionamiento
+(mantiene al usuario identificado y si está autorizado para ciertos servicios de la web)
+                 --> De personalización (prefer. usu)
+                 --> De rendimiento (mejorar experiencia nav)
+                 --> De publicidad (anónimas y personalizadas)
+                 --> De geo-localización
+                 --> Analítica (de nálisis): obtiene datos estadisticos--hacer informes sobre interes usuarios servicios que ofrece el sitio
+                 --> Redes sociales (plugins tipo social y deben estar autorizadas expresamente)
+Nivel de intrusismo --> Nivel 1 - Cookies no intrusivas
+                    --> Nivel 2 - Min. intrusivas
+                    --> Nivel 3 - Moderadamente intrusivas
