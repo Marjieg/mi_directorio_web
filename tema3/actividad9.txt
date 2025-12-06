@@ -15,7 +15,7 @@ Según su función --> Técnicas (estrictamente necesarias)- imprescindibles par
                  --> De rendimiento (mejorar experiencia nav)
                  --> De publicidad (anónimas y personalizadas)
                  --> De geo-localización
-                 --> Analítica (de nálisis): obtiene datos estadisticos--hacer informes sobre interes usuarios servicios que ofrece el sitio
+                 --> Analítica: obtiene datos estadisticos--hacer informes sobre interes usuarios servicios que ofrece el sitio
                  --> Redes sociales (plugins tipo social y deben estar autorizadas expresamente)
 Nivel de intrusismo --> Nivel 1 - Cookies no intrusivas
                     --> Nivel 2 - Min. intrusivas

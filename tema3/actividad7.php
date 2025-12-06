@@ -7,6 +7,7 @@
       <?php
          $_SESSION["usuario"] = "123456";
          $_SESSION["rol"] = "proveedor"; 
+         session_unset();
       ?>
    </body> 
 </html>

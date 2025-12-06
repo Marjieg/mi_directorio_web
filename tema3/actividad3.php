@@ -11,19 +11,28 @@ $nombre= $_POST["nombre"];
 $profesion= $_POST["profesion"];
 $correo=$_POST["correo"];
 
-echo "nombre ",$nombre,"<br>";
-
-foreach($profesion as $valor){
-    echo $valor."<br>";
-}
+// Validaciones
 if (empty($nombre)) {
-    echo "error, introduce un nombre";
-    //poner un botón aquí que ponga volver y me redirija a la página
-}elseif (condition) {
-    # code...
-}if (empty($correo)) {
-    echo "error, introduce un correo";
+    echo "Error, introduce un nombre<br>";
+    echo '<a href="actividad3.html">Volver</a>';
+    exit;
 }
+
+if (empty($correo)) {
+    echo "Error, introduce un correo<br>";
+    echo '<a href="actividad3.html">Volver</a>';
+    exit;
+}
+
+// Si todo está correcto, mostramos los datos
+echo "Nombre: $nombre<br>";
+echo "Correo: $correo<br>";
+echo "Profesiones:<br>";
+
+foreach ($profesion as $valor) {
+    echo $valor . "<br>";
+}
+
 
     ?>
 </body>
