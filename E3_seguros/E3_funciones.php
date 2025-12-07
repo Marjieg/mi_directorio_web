@@ -39,7 +39,6 @@ function calcularSeguro($aniocarnet, $genero, $aniomatricula, $combustible, $tip
 //condiciones verdaderas
 return $precio;
 
-
 }
 
 
