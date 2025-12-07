@@ -11,7 +11,6 @@ function verificadorNIF($NIF){
     //hay que separar el número y la letra
     $numero = substr($NIF, 0, -1);  //todo menos el último caracter
     $letraIntroducida = strtoupper(substr($NIF, -1)); //última letra
-    //comprobar que el número es realmente número
     //obtneer letra correcta
     $letraCorrecta = calculaLetraDeNif($numero);
     //comprobar si coinciden

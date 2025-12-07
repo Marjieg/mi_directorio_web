@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INTRODUCE LOS DATOS DEL SEGURO</h1>
+
+    <form action="E3_procesaMQNTHF.php" method="POST">
+        <fieldset>
+            <legend>TOMADOR</legend>
+        NOMBRE<input type="text" name="nombre" required>
+        Año de obtención del carnet<select name="aniocarnet">
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+        SEXO
+        <input type="radio" id="hombre" name="genero" value="Hombre">
+        <label for="hombre">HOMBRE</label>
+        <input type="radio" id="mujer" name="genero" value="Mujer">
+        <label for="mujer">MUJER</label>
+        </fieldset>
+        <fieldset>
+            <legend>VEHICULO</legend>
+            Matrícula<input type="text" name="matricula" required>
+            Año de matriculación<select name="aniomatricula">
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            </select>
+            Tipo de combustible<select name="combustible">
+            <option value="diesel">diesel</option>
+            <option value="gasolina">gasolina</option>
+            <option value="electrico">eléctrico</option>
+            </select>
+        </fieldset>
+          <fieldset>
+            <legend>MODALIDAD</legend>
+            tipo de SEGURO
+            <input type="radio" id="basico" name="tiposeguro" value="Básico">
+            <label for="basico">Básico</label>
+            <input type="radio" id="intermedio" name="tiposeguro" value="Intermedio">
+            <label for="intermedio">Intermedio</label>
+            <input type="radio" id="todoriesgo" name="tiposeguro" value="Todo riesgo">
+            <label for="todoriesgo">Todo riesgo</label>
+        </fieldset>
+        CALCULAR<input type="submit" name="calcular">
+
+    </form>
+    
+</body>
+</html>
